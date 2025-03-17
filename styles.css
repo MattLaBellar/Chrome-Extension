@@ -1,0 +1,36 @@
+body {
+  animation: flashBackground 30s steps(60, start) forwards;
+}
+
+@keyframes flashBackground {
+  0%, 100% { background-color: red; }
+  10%, 30%, 50%, 70%, 90% { background-color: transparent; }
+  20%, 40%, 60%, 80% { background-color: red; }
+}
+
+.rainbow {
+  animation: rainbow 600ms infinite;
+}
+
+@keyframes rainbow {
+  0% { color: red; }
+  15% { color: orange; }
+  30% { color: yellow; }
+  45% { color: green; }
+  60% { color: blue; }
+  75% { color: indigo; }
+  90% { color: purple; }
+}
+
+.noun {
+  animation: flash 500ms infinite alternate;
+}
+
+@keyframes flash {
+  0% { color: black; }
+  100% { color: white; }
+}
+
+.monochrome {
+  filter: grayscale(100%) sepia(100%) hue-rotate(180deg);
+}
